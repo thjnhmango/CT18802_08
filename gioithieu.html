@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BabyHouse  </title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="text/javascript" src="js/script.txt " defer > </script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js.txt"></script>
+  <script src="bootstrap/js/jquery.js"></script>
+</head>
+
+<body>
+
+  <!-- 
+xs          sm        md        lg 	      xl          xxl
+<576px	    ≥576px	  ≥768px	  ≥992px    ≥1200px     ≥1400px    -->
+
+
+  <!-- header -->
+
+
+<!-- header-brand class dùng cho header -->
+<header class="row justify-content-md-evenly  pt-5 pb-2  header-brand fixed-top" >
+
+  <!-- logo -->
+  <a href="trangchu.html" id="logo" class="col-4 col-md-2 navbar-brand  logo-navbar ms-2   text-center">
+    <!--   mx-md-2 mx-lg-3 -->
+    <img src="images/abc2.PNG" alt="logo" class="navbar-logo"> </a>
+
+  <!-- search -->
+  <form class="d-flex box-search p-0 col-4 col-md-5  me-2   col-lg-6" >
+    <!-- mx-md-2 me-xxl-3 -->
+    <input class="form-control rounded-pill " type="search" placeholder="Tìm gì cho bé ba mẹ ơi?" >
+    <button class="btn btn-hover d-flex align-items-center justify-content-center hover-effect " type="submit">
+      <i class="fa-solid  fa-magnifying-glass px-2 d-md-none d-block"></i>
+      <P class="d-none fs-5  d-md-block mb-0 mx-3 ">Tìm</P>
+    </button>
+  </form>
+
+
+  <!-- lơn hơn lg thì hiện ra  -->
+  <div class="col-1 d-none d-lg-block px-0  "></div>
+  <!-- <div class="col-1 d-none d-xxl-block px-0 "></div> -->
+
+  <!-- mua hàng -->
+  <a class="btn btn-hover col-1 col-md-2 col-lg-1 fw-bolder px-md-0  
+    icon-navbar icon-shopping d-flex align-items-center" href="donhang.html" >
+    <!--  mx-md-2 mx-xl-3 mx-xxl-4  -->
+    <p class="d-none d-xl-block text-nowrap  mb-0">Giỏ hàng</p>
+    <i class="fa-solid fa-basket-shopping ms-2 fs-5"></i>
+</a>
+
+  <!-- đăng ký đăng nhập -->
+  <a class="btn btn-hover col-1  col-md-2 col-lg-1 icon-navbar  fw-bolder me-1 me-sm-1  
+  px-md-0 icon-user d-flex align-items-center" href="dangnhap.html" >
+    <!-- me-1 mx-sm-1 -->
+    <p class="d-none d-xl-block  text-nowrap mb-0">Đăng nhập </p>
+    <i class="fa-solid fa-user-plus ms-2 fs-5"></i>
+</a>
+
+
+  <!-- button mở ra list khi màng hình nhỏ -->
+  <div class="col-1 ms-sm-1 d-flex p-0 d-block d-md-none">
+    <button class="btn btn-hover text-center pt-sm-0 d-md-none d-flex align-items-center px-0 fs-4 w-100"
+      type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+      aria-controls="offcanvasResponsive">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="offcanvas-md offcanvas-start " tabindex="-1" id="offcanvasResponsive"
+      aria-labelledby="offcanvasResponsiveLabel">
+      <div class="offcanvas-header nen-xanh">
+        <p class="text-center mau-vang fw-bold  m-0 fs-4">Menu</p>
+        <button type="button" class="btn-close fw-bold " data-bs-dismiss="offcanvas"
+          data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+      </div>
+
+
+      <!-- list khi màng hình nhỏ  class link-connect-list chỉnh css  -->
+      <div class="offcanvas-body d-flex align-items-start flex-column nen-xanhnhat list-item  d-block d-md-none ">
+        <a href="sanpham.html" class="text-center fw-medium mau-tim link-connect-list ">Sản phẩm</a>
+        <a href="tintuc.html" class=" link-connect-list fw-medium mau-tim text-center">Tin tức</a>
+        <a href="lienhe.html" class=" link-connect-list fw-medium mau-tim  text-center">Liên hệ</a>
+        <a href="gioithieu.html" class="link-connect-list fw-medium mau-tim  text-center">Giới thiệu</a>
+        <a href="dangky.html" class="link-connect-list fw-medium mau-tim text-center">Đăng ký</a>
+        <a href="dangnhap.html" class="link-connect-list fw-medium mau-tim text-center ">Đăng nhập</a>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <nav class=" mt-3 justify-content-md-evenly  row">
+      <div class="col-1 p-0 d-none d-md-block"></div>
+      <div class="col-2  d-none d-md-block">
+        <a class="btn  btn-hover fw-bolder text-nowrap text-center w-100 fs-5" href="sanpham.html" >Sản phẩm</a>
+      </div>
+      <div class="col-2  d-none d-md-block">
+        <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="tintuc.html" >Tin tức</a>
+      </div>
+      <div class="col-2  d-none d-md-block">
+        <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="lienhe.html" >Liên hệ</a>
+      </div>
+      <div class="col-2  d-none d-md-block">
+        <a class="btn btn-hover  fw-bolder text-nowrap text-center w-100  fs-5" href="gioithieu.html"
+          >Giới thiệu</a>
+      </div>
+      <div class="col-1 p-0 d-none d-md-block"></div>
+
+
+    </nav>
+  </div>
+
+</header>
+
+  
+
+  <main class="pt-md-5 pt-2">
+
+
+    <div class="container pt-5">
+
+      <div class="text-center py-2">
+        <h2 class="mau-xanh fw-bold">Về BabyHouse</h2>
+        <p class="fs-5">Cửa hàng BabyHouse chuyên cung cấp đồ chơi và thời trang cho trẻ em, mang đến cho các bậc phụ huynh sự lựa chọn phong phú và chất lượng. Chúng tôi có các loại đồ chơi giáo dục, đồ chơi sáng tạo giúp phát triển tư duy và kỹ năng của trẻ, cùng với những bộ trang phục thời trang, dễ thương và thoải mái cho bé. Tất cả sản phẩm đều được đảm bảo an toàn và thân thiện với sức khỏe của trẻ. Hãy đến BabyHouse để tìm kiếm những món quà ý nghĩa và phong cách cho bé yêu của bạn!</p>
+      </div>
+ 
+
+      <!-- row-reverse  class dùng để đảo chiều khi màng hình lớn -->
+      <div class="row  gy-3 py-4">
+        <img src="images/trangchu/bangchucai1.webp" class="rounded p-0  col-md-3 col" alt="">
+        <p class="col-md-9 fs-5  col">
+          <strong>Đồ Chơi</strong>: Chúng tôi cung cấp một loạt các loại đồ chơi an toàn, sáng tạo và giáo dục, từ xếp hình, đồ chơi vận động đến các bộ đồ chơi mô phỏng, giúp trẻ em phát triển tư duy và kỹ năng xã hội. Mỗi sản phẩm đều được lựa chọn kỹ lưỡng để đảm bảo an toàn và phù hợp với từng độ tuổi.</p>
+      </div>
+
+      <div class="row py-4 gy-3 row-reverse">
+        <img src="images/Gray and Brown Aesthetic Baby Photo Collage.png" class="  p-0 col-md-3 col rounded "  alt="" />
+        <p class="col-md-9 fs-5 col"><strong>Thời Trang</strong>: Bộ sưu tập thời trang trẻ em của chúng tôi không chỉ đẹp mắt mà còn thoải mái và dễ chịu. Với các mẫu mã đa dạng, từ trang phục hàng ngày đến những bộ đồ dự tiệc, BabyHouse cam kết mang đến cho bé yêu của bạn phong cách thời trang nổi bật và năng động.</p>
+      </div>
+
+      <div class="text-center py-2">
+        <h2 class="mau-xanh fw-bold">Cam kết</h2>
+        <p class="fs-5">Tại <strong>Babyhouse</strong>, chúng tôi cam kết mang đến sản phẩm đồ chơi và thời trang trẻ em chất lượng cao, an toàn cho sức khỏe. Mỗi sản phẩm đều được chọn lọc kỹ càng từ các thương hiệu uy tín. Đội ngũ nhân viên tận tâm của chúng tôi luôn sẵn sàng hỗ trợ bạn, đảm bảo trải nghiệm mua sắm thoải mái và hài lòng. Hãy đến với Babyhouse để tìm thấy những điều tuyệt vời nhất cho bé yêu!</p>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+  </main>
+
+
+
+  <footer >
+    <div class="container  px-5 px-sm-0 border-top pt-4">
+      <div class="row  ">
+        <div class="col-md-3 col-12  col-sm-6 px-1 text-start">
+          <!-- logo -->
+          <a class=" text-center" href="trangchu.html">
+            <img src="images/abc.png " class="navbar-logo mb-2" alt="logo">
+          </a>
+          <p>
+            <i class="fa-solid fa-location-dot "></i>
+            - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            - Điện thoại: 1900 1234
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            - babyhouse@gmail.com
+          </p>
+
+        </div>
+
+        <div class="col-md-3 col-12 px-1 col-sm-6  ">
+          <div class="d-flex flex-column text-start">
+            <p class="text-start text-uppercase fw-bold mau-tim">Về BabyHouse</p>
+            <p><a class="link-connect" href="csvdk.html">Chính sách bảo mật</a></p>
+            <p><a class="link-connect" href="csvdk.html">Điều khoản dịch vụ</a></p>
+            <p><a class="link-connect" href="csvdk.html">Chính sách đổi trả</a></p>
+            <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 px-1 col-sm-6  ">
+          <div class="d-flex flex-column text-start">
+            <p class="text-start text-uppercase fw-bold mau-tim">Liên kết</p>
+            <p><a class="link-connect " href="sanpham.html">Sản phẩm</a></p>
+            <p><a class="link-connect" href="tintuc.html">Tin tức</a></p>
+            <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+            <p><a class="link-connect" href="gioithieu.html">Giới thiệu</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 px-1 col-sm-6">
+          <p class="fw-bold text-uppercase mau-tim ">Đăng ký nhận thông tin</p>
+          <div class="input-group mb-3 ">
+            <input type="text" class="form-control rounded-pill " placeholder="Nhập Email">
+            <button class="btn btn-hover hover-effect" type="button"   >
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </div>
+          <!-- btn-brand class chỉnh các kiên kết  shoppe tiktok ... -->
+          <p class="fw-bold text-uppercase mau-tim ">Theo dõi BabyHouse</p>
+
+          <a class="btn btn-brand text-center hover-effect" href="https://facebook.com" >
+            <img src="images/facebook2.webp" class="btn-brand"></i>
+          </a>
+          <a class="btn btn-brand text-center hover-effect" href="https://chat.zalo.me/" >
+            <img src="images/stick_zalo.webp" class="btn-brand"></i>
+          </a>
+          <a class="btn btn-brand text-center hover-effect" href="https://youtube.com" >
+            <img src="images/youtube2.webp" class="btn-brand"> </i>
+          </a>
+          <a class="btn btn-brand  text-center hover-effect" href="https://tiktok.com" >
+            <img src="images/tiktok.webp" class="btn-brand"></i>
+          </a>
+          <a class="btn btn-brand  text-center hover-effect" href='https://shopee.vn' >
+            <img src="images/shopee.webp" class="btn-brand text-center"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

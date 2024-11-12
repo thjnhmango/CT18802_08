@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyHouse  </title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="js/script.txt " defer > </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js.txt"></script>
+    <script src="bootstrap/js/jquery.js"></script>
+  </head>
+  <body>
+    <header class="row justify-content-md-evenly  pt-5 pb-2  header-brand fixed-top">
+
+      <!-- logo -->
+      <a href="trangchu.html" id="logo" class="col-4 col-md-2 navbar-brand  logo-navbar ms-2   text-center">
+        <!--   mx-md-2 mx-lg-3 -->
+        <img src="images/abc2.PNG" alt="logo" class="navbar-logo"> </a>
+  
+      <!-- search -->
+      <form class="d-flex box-search p-0 col-4 col-md-5  me-2   col-lg-6">
+        <!-- mx-md-2 me-xxl-3 -->
+        <input class="form-control rounded-pill " type="search" placeholder="tìm gì cho bé ba mẹ ơi?" >
+        <button class="btn btn-hover d-flex align-items-center justify-content-center hover-effect " type="submit">
+          <i class="fa-solid  fa-magnifying-glass px-2 d-md-none d-block"></i>
+          <P class="d-none fs-5  d-md-block mb-0 mx-3 ">Tìm</P>
+        </button>
+      </form>
+  
+  
+      <!-- lơn hơn lg thì hiện ra  -->
+      <div class="col-1 d-none d-lg-block px-0  "></div>
+      <!-- <div class="col-1 d-none d-xxl-block px-0 "></div> -->
+  
+      <!-- mua hàng -->
+      <a class="btn btn-hover col-1 col-md-2 col-lg-1 fw-bolder px-md-0  
+        icon-navbar icon-shopping d-flex align-items-center" href="donhang.html" >
+        <!--  mx-md-2 mx-xl-3 mx-xxl-4  -->
+        <p class="d-none d-xl-block text-nowrap  mb-0">Giỏ hàng</p>
+        <i class="fa-solid fa-basket-shopping ms-2 fs-5"></i>
+    </a>
+  
+      <!-- đăng ký đăng nhập -->
+      <a class="btn btn-hover col-1  col-md-2 col-lg-1 icon-navbar  fw-bolder me-1 me-sm-1  
+      px-md-0 icon-user d-flex align-items-center" href="dangnhap.html" >
+        <!-- me-1 mx-sm-1 -->
+        <p class="d-none d-xl-block  text-nowrap mb-0">Đăng nhập </p>
+        <i class="fa-solid fa-user-plus ms-2 fs-5"></i>
+  </a>
+  
+  
+      <!-- button mở ra list khi màng hình nhỏ -->
+      <div class="col-1 ms-sm-1 d-flex p-0 d-block d-md-none">
+        <button class="btn btn-hover text-center pt-sm-0 d-md-none d-flex align-items-center px-0 fs-4 w-100"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+  
+        <div class="offcanvas-md offcanvas-start " tabindex="-1" id="offcanvasResponsive"
+          aria-labelledby="offcanvasResponsiveLabel">
+          <div class="offcanvas-header nen-xanh">
+            <p class="text-center mau-vang fw-bold  m-0 fs-4">Menu</p>
+            <button type="button" class="btn-close fw-bold " data-bs-dismiss="offcanvas"
+              data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+          </div>
+  
+  
+          <!-- list khi màng hình nhỏ  class link-connect-list chỉnh css  -->
+          <div class="offcanvas-body d-flex align-items-start flex-column nen-xanhnhat list-item  d-block d-md-none ">
+            <a href="sanpham.html" class="text-center fw-medium mau-tim link-connect-list ">Sản phẩm</a>
+            <a href="tintuc.html" class=" link-connect-list fw-medium mau-tim text-center">Tin tức</a>
+            <a href="lienhe.html" class=" link-connect-list fw-medium mau-tim  text-center">Liên hệ</a>
+            <a href="gioithieu.html" class="link-connect-list fw-medium mau-tim  text-center">Giới thiệu</a>
+            <a href="dangky.html" class="link-connect-list fw-medium mau-tim text-center">Đăng ký</a>
+            <a href="dangnhap.html" class="link-connect-list fw-medium mau-tim text-center ">Đăng nhập</a>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+  
+      <div class="container">
+        <nav class=" mt-3 justify-content-md-evenly  row">
+          <div class="col-1 p-0 d-none d-md-block"></div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn  btn-hover fw-bolder text-nowrap text-center w-100 fs-5" href="sanpham.html" >Sản phẩm</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="tintuc.html" >Tin tức</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="lienhe.html" >Liên hệ</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover  fw-bolder text-nowrap text-center w-100  fs-5" href="gioithieu.html"
+              >Giới thiệu</a>
+          </div>
+          <div class="col-1 p-0 d-none d-md-block"></div>
+  
+  
+        </nav>
+      </div>
+  
+    </header>
+    <main class="pt-md-5 pt-2 container">
+      <article class="news-article">
+        <img
+          src="./images/tintuc/tt5.png"
+          alt="Tin tức hot"
+          class="img-fluid rounded"
+        />
+        <div class="p-3">
+          <h2 class="article-title">
+            Tham khảo lịch ăn dặm cho bé 9 tháng đơn giản
+          </h2>
+          <p class="article-meta">
+            Ngày đăng: <span class="article-date">01/11/2024</span>
+          </p>
+          <p class="article-text">
+            Ăn dặm là hành trình mà ba mẹ cần thiết kế chế độ dinh dưỡng sao cho đảm bảo phù hợp với từng tháng tuổi của con. Ở mỗi độ tuổi, thực đơn của bé sẽ thay đổi khác nhau nhằm cung cấp đầy đủ dinh dưỡng giúp bé phát triển. Trong bài viết dưới đây sẽ chia sẻ lịch ăn dặm cho bé 9 tháng chuẩn khoa học. Ba mẹ tham khảo nhé!
+          </p>
+          <p class="article-text">
+            <strong
+              >Nhu cầu dinh dưỡng cần thiết cho bé 9 tháng tuổi 
+            </strong>
+            <br />
+            <p> Trong 6 tháng đầu đời, các bé được khuyến nghị nên bú sữa mẹ hoàn toàn nhưng khi qua mốc thời gian này, bé sẽ được khuyến khích ăn dặm ngoài sữa mẹ. Theo đó, nhu cầu dinh dưỡng của trẻ 9 tháng tuổi cụ thể như sau: <br/>
+            <ul>
+            <li> Protein: Trung bình nhu cầu của bé sẽ khoảng 1,4g/kg dựa vào nhu cầu phát triển của xương, cơ và cả mô. Ba mẹ có thể cho bé sử dụng những protein có giá trị sinh học cao khoảng 70 - 85% từ sữa, thịt, cá và trứng. </li>
+            <li>Lipid: Nhu cầu của bé còn phụ thuộc khá nhiều vào hàm lượng chất béo trung bình có ở trong sữa mẹ cũng như lượng sữa trung bình mà bé ăn. </li>
+            <li>Glucid: Lượng Glucid có trong bữa ăn của bé có thể được thay đổi bởi những loại thức ăn được bổ sung hoặc khi nhu cầu của bé thay đổi. </li>
+            <li>Vitamin: Mỗi ngày, bé sẽ được cung cấp các loại vitamin thông qua sữa mẹ. Vì vậy, mẹ cần phải ăn uống đầy đủ và bổ sung các loại vitamin cần thiết cho con như: A (0,3mg), B1 (0,4mg), B2 (4mg), B3 (30mg), C (400mcg), D (200-400 IU).</li>
+            <li>Khoáng chất: Bé trong độ tuổi này cần được bổ sung thêm Canxi, sắt và kẽm.</li>
+            </ul>
+            </p>
+            <strong>Lịch ăn dặm của bé 9 tháng tuổi còn bú sữa mẹ</strong>
+            <br/>
+            <p> Đối với những em bé còn bú sữa mẹ, lịch ăn dặm cho bé 9 tháng tuổi sẽ được xây dựng dựa trên nhu cầu ăn của bé. Tuy nhiên, dưới đây là gợi ý lịch ăn khoa học và được nhiều bà mẹ áp dụng thành công trong quá trình nuôi con của mình. Cụ thể như sau:
+            </p>
+            <ul>
+            <li>Lần 1: Từ 6:00 đến 7:00 </li>
+            <li>Lần 2: Khoảng 8:00, sau khi bú, mẹ có thể cho con ăn thêm hoa quả, sữa chua hoặc ngũ cốc. </li>
+            <li>Lần 3: 9:30 - 10:00, sau khi bú bé sẽ ngủ trưa</li>
+            <li>Lần 4: Tầm giữa trưa, tùy thời gian mà bé thấy đói, mẹ có thể chuẩn bị một ít trái cây hoặc một ít rau xanh như đậu Hà Lan, cà rốt, súp lơ,... để bé tự ăn. Hoặc mẹ có thể chiều theo ý con, chuẩn bị cho con những món con thích để ăn trưa.</li>
+            <li>Lần 5: 13:30, sau khi bé bú mẹ sẽ tiếp tục ngủ trưa một giấc ngắn.</li>
+            <li>Lần 6: 15:30 - 16:00 bé lại được bú sữa mẹ.</li>
+            <li>Lần 7: 18:00 là thời gian dành cho bữa tối, bé sẽ ăn bữa ăn do mẹ chuẩn bị với rau, cơm, đậu, … hoặc bất cứ thứ gì mà bé có thể ăn được.</li>
+            <li>Lần 8: 19:00 - 20:00 bé sẽ bú mẹ trước khi đi ngủ.</li>
+            </ul>
+          </p>
+          <p>Thông thường, các em bé 9 tháng tuổi có thể ngủ một mạch cho đến sáng. Nhưng vẫn sẽ có một số bé dậy giữa đêm để bú mẹ.</p>
+          <strong>Lịch ăn của bé 9 tháng tuổi với sữa công thức</strong>
+          <p>Lịch trình của những bé uống sữa công thức cũng sẽ dựa trên thể trạng của từng bé. Tuy nhiên, hầu hết mọi ngày các bé đều sẽ được chăm sóc theo thời gian biểu như sau:</p>
+          <ul>
+          <li>9:30: Bé bắt đầu bữa sáng của mình với ngũ cốc và các loại trái cây nhỏ khác. Bên cạnh đó, bé cũng sẽ uống thêm khoảng 150ml sữa công thức.</li>
+          <li>13:00: Bé bắt đầu bữa trưa của mình với hai viên rau củ được xay nhuyễn, thêm một quả trứng nhỏ, một nửa miếng bánh mì nướng và trái cây cắt nhỏ.</li>
+          <li>14:00: Bé bú thêm khoảng 150ml sữa công thức.</li>
+          <li>17:00: Bé ăn bữa tối. Thực đơn mà mẹ chuẩn bị cho bé có thể là những miếng rau cắt nhỏ, thịt gà hoặc một phần ngũ cốc khác. Mẹ đừng quên chuẩn bị thêm 150ml sữa công thức cho con.</li>
+          <li>20:30: Bé sẽ bú tiếp khoảng 150ml đến 180ml sữa công thức tùy vào khả năng của từng bé.</li>
+          </ul>
+          <p><strong>Lưu ý:</strong> Đối với những bé uống sữa công thức, số lần cho bé ăn sữa trong ngày sẽ ít hơn so với những bé uống sữa mẹ. Tuy nhiên, mẹ có thể điều chỉnh sao cho phù hợp với nhu cầu. </p>
+          <p>Ba mẹ có thể ưu tiên lựa chọn các loại thực phẩm cho bé ăn dặm như: cháo ăn dặm, bánh ăn dặm, váng sữa, sữa chua,... để thay đổi khẩu vị cho bé. Đặc biệt, từ ngày 9/3 - 21/3/2024. Tất cả các sản phẩm ăn dặm cho bé đều có ưu đãi cực hot. Ba mẹ lưu lại để săn ngay thực phẩm ăn dặm cho bé với giá hời này nhé! </p>
+          <strong>Mách mẹ các loại sữa công thức tốt dành cho bé 9 tháng tuổi</strong><br/>
+            <p>Ngoài việc thiết kế cho con một lịch trình ăn dặm khoa học, ba mẹ cũng đừng quên lựa chọn cho bé những loại sữa công thức phù hợp. Dưới đây, giới thiệu đến ba mẹ những sản phẩm sữa tốt cho sự phát triển cho bé 9 tháng tuổi:</p>
+            <ul>
+            <li>Sữa Blackmores Số 2 900g (6-12 tháng tuổi): Sữa bổ sung các dưỡng chất ở thời kỳ bắt đầu ăn dặm, tốt cho hệ tiêu hóa cũng như quá trình hấp thu của bé.</li>
+            <li>Sữa Enfamil A+ số 2 1700g (6-12 tháng) 2Flex: Sữa có chứa bộ đôi dưỡng chất DHA và MFGM. Ngoài ra, sản phẩm còn có hệ chất 2’-FL HMO và FOS giúp bé phát triển một cách tốt nhất. Sữa không có chứa đường sucrose cho bé thưởng thức một vị thanh mát.</li>
+            <li>Sữa Similac 5G số 2 900g (6-12 tháng): Sản phẩm có dưỡng chất 5G để giúp cho bé phát triển não bộ tốt hơn. Bên cạnh đó, sức đề kháng của bé cũng được tăng cường cao hơn, hệ tiêu hóa cũng sẽ được phát triển khỏe mạnh.</li>
+            </ul>
+            <p>Trên đây là toàn bộ thông tin về lịch ăn dặm cho bé 9 tháng tuổi mà ba mẹ có thể tham khảo để nuôi dưỡng cho con mình. Ba mẹ cần cho con ăn đúng giờ và bổ sung dưỡng chất đầy đủ để con phát triển một cách toàn diện nhất. Tuy nhiên, những thông tin cung cấp chỉ mang tính tham khảo. Để có được những hướng dẫn cụ thể, ba mẹ cần tìm đến các chuyên gia dinh dưỡng để được tư vấn cụ thể hơn.</p>
+          <a href="tintuc.html" class="btn btn-secondary"
+            >Quay lại trang tin tức</a
+          >
+        </div>
+      </article>
+    </main>
+    <footer >
+      <div class="container  px-5 px-sm-0 border-top pt-4">
+        <div class="row  ">
+          <div class="col-md-3 col-12  col-sm-6 px-1 text-start">
+            <!-- logo -->
+            <a class=" text-center" href="trangchu.html">
+              <img src="images/abc.png " class="navbar-logo mb-2" alt="logo">
+            </a>
+            <p>
+              <i class="fa-solid fa-location-dot "></i>
+              - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              - Điện thoại: 1900 1234
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              - babyhouse@gmail.com
+            </p>
+  
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6  ">
+            <div class="d-flex flex-column text-start">
+              <p class="text-start text-uppercase fw-bold mau-tim">Về BabyHouse</p>
+              <p><a class="link-connect" href="csvdk.html">Chính sách bảo mật</a></p>
+              <p><a class="link-connect" href="csvdk.html">Điều khoản dịch vụ</a></p>
+              <p><a class="link-connect" href="csvdk.html">Chính sách đổi trả</a></p>
+              <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6  ">
+            <div class="d-flex flex-column text-start">
+              <p class="text-start text-uppercase fw-bold mau-tim">Liên kết</p>
+              <p><a class="link-connect " href="sanpham.html">Sản phẩm</a></p>
+              <p><a class="link-connect" href="tintuc.html">Tin tức</a></p>
+              <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+              <p><a class="link-connect" href="gioithieu.html">Giới thiệu</a></p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6">
+            <p class="fw-bold text-uppercase mau-tim ">Đăng ký nhận thông tin</p>
+            <div class="input-group mb-3 ">
+              <input type="text" class="form-control rounded-pill " placeholder="Nhập Email">
+              <button class="btn btn-hover hover-effect" type="button"   >
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+            <!-- btn-brand class chỉnh các kiên kết  shoppe tiktok ... -->
+            <p class="fw-bold text-uppercase mau-tim ">Theo dõi BabyHouse</p>
+  
+            <a class="btn btn-brand text-center hover-effect" href="https://facebook.com" >
+              <img src="images/facebook2.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand text-center hover-effect" href="https://chat.zalo.me/" >
+              <img src="images/stick_zalo.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand text-center hover-effect" href="https://youtube.com" >
+              <img src="images/youtube2.webp" class="btn-brand"> </i>
+            </a>
+            <a class="btn btn-brand  text-center hover-effect" href="https://tiktok.com" >
+              <img src="images/tiktok.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand  text-center hover-effect" href='https://shopee.vn' >
+              <img src="images/shopee.webp" class="btn-brand text-center"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

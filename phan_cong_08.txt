@@ -1,0 +1,21 @@
+Số trang web: 9
+1. trangchu.html
+2. gioithieu.html
+3. tintuc.html (gồm 5 trang nhỏ)
+4. dangky.html
+5. dangnhap.html
+6. donhang.html
+7. sanpham.html
+8. lienhe.html
+9. csvdk.html
+
+PHÂN CÔNG CÔNG VIỆC:									
+    MSSV           Họ và tên		 Trang web thực hiện                       	Hàm Javascript /CSS			
+  B2304076      Nguyễn Văn Phong	Trang chủ, giới thiệu	                    CSS, header, footer, navbar			
+  B2304084      Trần Phước Thịnh	Giỏ hàng, liên hệ	            addCart, updateCart, changeQuantity, removeCart, payment, valcontact			
+  B2304039      Trần Văn Duy		Tin tức					    CSS
+  B2304040      Nguyễn Tấn Đạt		Sản phẩm, Csvdk	                     filterByPrice, filterByCategory, applyFiltersToProducts			
+  B2304083      Ngô Việt Thành		Đăng kí, đăng nhập	                            sigin, sigup											
+									
+									
+									

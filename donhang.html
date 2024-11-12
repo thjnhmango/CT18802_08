@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BabyHouse  </title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="text/javascript" src="js/script.txt " defer > </script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js.txt"></script>
+  <script src="bootstrap/js/jquery.js"></script>
+</head>
+
+<body>
+
+  <!-- 
+xs          sm        md        lg 	      xl          xxl
+<576px	    ≥576px	  ≥768px	  ≥992px    ≥1200px     ≥1400px    -->
+
+
+  <!-- header -->
+
+
+<!-- header-brand class dùng cho header -->
+<header class="row justify-content-md-evenly  pt-5 pb-2  header-brand fixed-top">
+
+  <!-- logo -->
+  <a href="trangchu.html" id="logo" class="col-4 col-md-2 navbar-brand  logo-navbar ms-2   text-center">
+    <!--   mx-md-2 mx-lg-3 -->
+    <img src="images/abc2.PNG" alt="logo" class="navbar-logo"> </a>
+
+  <!-- search -->
+  <form class="d-flex box-search p-0 col-4 col-md-5  me-2   col-lg-6" >
+    <!-- mx-md-2 me-xxl-3 -->
+    <input class="form-control rounded-pill " type="search" placeholder="Tìm gì cho bé ba mẹ ơi?" >
+    <button class="btn btn-hover d-flex align-items-center justify-content-center hover-effect " type="submit">
+      <i class="fa-solid  fa-magnifying-glass px-2 d-md-none d-block"></i>
+      <P class="d-none fs-5  d-md-block mb-0 mx-3 ">Tìm</P>
+    </button>
+  </form>
+
+
+  <!-- lơn hơn lg thì hiện ra  -->
+  <div class="col-1 d-none d-lg-block px-0  "></div>
+  <!-- <div class="col-1 d-none d-xxl-block px-0 "></div> -->
+
+  <!-- mua hàng -->
+  <a class="btn btn-hover col-1 col-md-2 col-lg-1 fw-bolder px-md-0  
+    icon-navbar icon-shopping d-flex align-items-center" href="donhang.html" >
+    <!--  mx-md-2 mx-xl-3 mx-xxl-4  -->
+    <p class="d-none d-xl-block text-nowrap  mb-0">Giỏ hàng</p>
+    <i class="fa-solid fa-basket-shopping ms-2 fs-5"></i>
+</a>
+
+  <!-- đăng ký đăng nhập -->
+  <a class="btn btn-hover col-1  col-md-2 col-lg-1 icon-navbar  fw-bolder me-1 me-sm-1  
+  px-md-0 icon-user d-flex align-items-center" href="dangnhap.html" >
+    <!-- me-1 mx-sm-1 -->
+    <p class="d-none d-xl-block  text-nowrap mb-0">Đăng nhập </p>
+    <i class="fa-solid fa-user-plus ms-2 fs-5"></i>
+</a>
+
+
+  <!-- button mở ra list khi màng hình nhỏ -->
+  <div class="col-1 ms-sm-1 d-flex p-0 d-block d-md-none">
+    <button class="btn btn-hover text-center pt-sm-0 d-md-none d-flex align-items-center px-0 fs-4 w-100"
+      type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+      aria-controls="offcanvasResponsive">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="offcanvas-md offcanvas-start " tabindex="-1" id="offcanvasResponsive"
+      aria-labelledby="offcanvasResponsiveLabel">
+      <div class="offcanvas-header nen-xanh">
+        <p class="text-center mau-vang fw-bold  m-0 fs-4">Menu</p>
+        <button type="button" class="btn-close fw-bold " data-bs-dismiss="offcanvas"
+          data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+      </div>
+
+
+      <!-- list khi màng hình nhỏ  class link-connect-list chỉnh css  -->
+      <div class="offcanvas-body d-flex align-items-start flex-column nen-xanhnhat list-item  d-block d-md-none ">
+        <a href="sanpham.html" class="text-center fw-medium mau-tim link-connect-list ">Sản phẩm</a>
+        <a href="tintuc.html" class=" link-connect-list fw-medium mau-tim text-center">Tin tức</a>
+        <a href="lienhe.html" class=" link-connect-list fw-medium mau-tim  text-center">Liên hệ</a>
+        <a href="gioithieu.html" class="link-connect-list fw-medium mau-tim  text-center">Giới thiệu</a>
+        <a href="dangky.html" class="link-connect-list fw-medium mau-tim text-center">Đăng ký</a>
+        <a href="dangnhap.html" class="link-connect-list fw-medium mau-tim text-center ">Đăng nhập</a>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <nav class=" mt-3 justify-content-md-evenly  row">
+      <div class="col-1 p-0 d-none d-md-block"></div>
+      <div class="col-2  d-none d-md-block">
+        <a class="btn  btn-hover fw-bolder text-nowrap text-center w-100 fs-5" href="sanpham.html" >Sản phẩm</a>
+      </div>
+      <div class="col-2  d-none d-md-block">
+        <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="tintuc.html" >Tin tức</a>
+      </div>
+      <div class="col-2  d-none d-md-block">
+        <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="lienhe.html" >Liên hệ</a>
+      </div>
+      <div class="col-2  d-none d-md-block">
+        <a class="btn btn-hover  fw-bolder text-nowrap text-center w-100  fs-5" href="gioithieu.html"
+          >Giới thiệu</a>
+      </div>
+      <div class="col-1 p-0 d-none d-md-block"></div>
+
+
+    </nav>
+  </div>
+
+</header>
+
+  
+
+  <main class="pt-md-5 pt-2">
+    <!-- banner -->
+      <div class="container mt-2">
+        <div id="banner-animation" class="carousel slide " data-bs-ride="carousel" data-bs-interval="5000">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#banner-animation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#banner-animation" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#banner-animation" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/banner1.webp" class="d-block  w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/bannertop4.png" class="d-block  w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner2.png" class="d-block   w-100" alt="...">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#banner-animation" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#banner-animation" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+      </div>
+   
+ <div class="container mt-5">
+    <h1 class="mau-xanh text-center pb-4"> Chi Tiết Đơn Hàng </h1>
+        <table class="table table-responsive  table-bordered border  border-dark table-hover text-center ">
+                <tr class=" table-dark table-active text-white">
+                    <th>Hình Ảnh</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Đơn Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody id="cartTableBody">
+                <!-- Sản phẩm sẽ được thêm vào đây -->
+            </tbody>
+        </table>
+    <div class="text-end ">
+        <h4 >Tổng Số Tiền: <span id="totalPrice">0</span> VNĐ</h4>
+    </div>
+</div>
+
+<div class="container mt-5">
+  <h3 class="mau-xanh text-center"> Thông Tin Thanh Toán</h3 >
+  <form novalidate onsubmit=payment() >
+      <div class="mb-3">
+          <label for="fullName" class="form-label">Họ và Tên</label>
+          <input placeholder="Nhập họ và tên " id="fullName" type="text" class="form-control border rounded nen-xam fw-lighter fs-7 "  required>
+      </div>
+      <div class="mb-3">
+          <label for="email" class="form-label">Địa Chỉ Email</label>
+          <input placeholder="example@gmail.com" id="email" type="email" class="form-control border rounded nen-xam fw-lighter fs-7 "  required>
+      </div>
+      <div class="mb-3">
+          <label for="phone" class="form-label">Số Điện Thoại</label>
+          <input placeholder="Nhập số điện thoại" id="phone" type="tel" class="form-control border rounded nen-xam fw-lighter fs-7 "  required>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Địa chỉ nhận hàng</label>
+        <input placeholder="Nhập địa chỉ nhận hàng" id="address" type="text" class="form-control border rounded nen-xam fw-lighter fs-7" required>
+    </div>
+      <fieldset class="mb-2">
+          <legend class="col-form-label pt-0">Phương Thức Thanh Toán</legend>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="ptthanhtoan" id="cod" checked>
+              <label class="form-check-label" for="cod">
+                  Thanh Toán Khi Nhận Hàng
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="ptthanhtoan" id="bank" >
+              <label class="form-check-label" for="bank">
+                  Chuyển Khoản Ngân Hàng
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio"  name="ptthanhtoan" id="eWallet" >
+              <label class="form-check-label" for="eWallet">
+                  Ví Điện Tử
+              </label>
+          </div>
+      </fieldset>
+      <div class="form-check mb-00">
+          <input class="form-check-input" type="checkbox" id="checkbox" required>
+          <label class="form-check-label" >
+             <p> Tôi đồng ý với <a  class="link-connect" href="csvdk.html">chính sách và điều khoản  </a> </p>
+          </label>
+      </div>
+      <button type="submit" class="btn btn-primary" >Xác Nhận Thanh Toán</button>
+  </form>
+</div>
+
+  </main>
+
+  <footer >
+    <div class="container  px-5 px-sm-0 border-top pt-4">
+      <div class="row  ">
+        <div class="col-md-3 col-12  col-sm-6 px-1 text-start">
+          <!-- logo -->
+          <a class=" text-center" href="trangchu.html">
+            <img src="images/abc.png " class="navbar-logo mb-2" alt="logo">
+          </a>
+          <p>
+            <i class="fa-solid fa-location-dot "></i>
+            - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            - Điện thoại: 1900 1234
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            - babyhouse@gmail.com
+          </p>
+
+        </div>
+
+        <div class="col-md-3 col-12 px-1 col-sm-6  ">
+          <div class="d-flex flex-column text-start">
+            <p class="text-start text-uppercase fw-bold mau-tim">Về BabyHouse</p>
+            <p><a class="link-connect" href="csvdk.html">Chính sách bảo mật</a></p>
+            <p><a class="link-connect" href="csvdk.html">Điều khoản dịch vụ</a></p>
+            <p><a class="link-connect" href="csvdk.html">Chính sách đổi trả</a></p>
+            <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 px-1 col-sm-6  ">
+          <div class="d-flex flex-column text-start">
+            <p class="text-start text-uppercase fw-bold mau-tim">Liên kết</p>
+            <p><a class="link-connect " href="sanpham.html">Sản phẩm</a></p>
+            <p><a class="link-connect" href="tintuc.html">Tin tức</a></p>
+            <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+            <p><a class="link-connect" href="gioithieu.html">Giới thiệu</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 px-1 col-sm-6">
+          <p class="fw-bold text-uppercase mau-tim ">Đăng ký nhận thông tin</p>
+          <div class="input-group mb-3 ">
+            <input type="text" class="form-control rounded-pill " placeholder="Nhập Email">
+            <button class="btn btn-hover hover-effect" type="button"   >
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </div>
+          <!-- btn-brand class chỉnh các kiên kết  shoppe tiktok ... -->
+          <p class="fw-bold text-uppercase mau-tim ">Theo dõi BabyHouse</p>
+
+          <a class="btn btn-brand text-center hover-effect" href="https://facebook.com" >
+            <img src="images/facebook2.webp" class="btn-brand"></i>
+          </a>
+          <a class="btn btn-brand text-center hover-effect" href="https://chat.zalo.me/" >
+            <img src="images/stick_zalo.webp" class="btn-brand"></i>
+          </a>
+          <a class="btn btn-brand text-center hover-effect" href="https://youtube.com" >
+            <img src="images/youtube2.webp" class="btn-brand"> </i>
+          </a>
+          <a class="btn btn-brand  text-center hover-effect" href="https://tiktok.com" >
+            <img src="images/tiktok.webp" class="btn-brand"></i>
+          </a>
+          <a class="btn btn-brand  text-center hover-effect" href='https://shopee.vn' >
+            <img src="images/shopee.webp" class="btn-brand text-center"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

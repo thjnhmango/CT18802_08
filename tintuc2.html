@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyHouse  </title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="js/script.txt" defer > </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js.txt"></script>
+    <script src="bootstrap/js/jquery.js"></script>
+  </head>
+  <body>
+    <header class="row justify-content-md-evenly  pt-5 pb-2  header-brand fixed-top" >
+
+      <!-- logo -->
+      <a href="trangchu.html" id="logo" class="col-4 col-md-2 navbar-brand  logo-navbar ms-2   text-center">
+        <!--   mx-md-2 mx-lg-3 -->
+        <img src="images/abc2.PNG" alt="logo" class="navbar-logo"> </a>
+  
+      <!-- search -->
+      <form class="d-flex box-search p-0 col-4 col-md-5  me-2   col-lg-6" >
+        <!-- mx-md-2 me-xxl-3 -->
+        <input class="form-control rounded-pill " type="search" placeholder="tìm gì cho bé ba mẹ ơi?" >
+        <button class="btn btn-hover d-flex align-items-center justify-content-center hover-effect " type="submit">
+          <i class="fa-solid  fa-magnifying-glass px-2 d-md-none d-block"></i>
+          <P class="d-none fs-5  d-md-block mb-0 mx-3 ">Tìm</P>
+        </button>
+      </form>
+  
+  
+      <!-- lơn hơn lg thì hiện ra  -->
+      <div class="col-1 d-none d-lg-block px-0  "></div>
+      <!-- <div class="col-1 d-none d-xxl-block px-0 "></div> -->
+  
+      <!-- mua hàng -->
+      <a class="btn btn-hover col-1 col-md-2 col-lg-1 fw-bolder px-md-0  
+        icon-navbar icon-shopping d-flex align-items-center" href="donhang.html" >
+        <!--  mx-md-2 mx-xl-3 mx-xxl-4  -->
+        <p class="d-none d-xl-block text-nowrap  mb-0">Giỏ hàng</p>
+        <i class="fa-solid fa-basket-shopping ms-2 fs-5"></i>
+    </a>
+  
+      <!-- đăng ký đăng nhập -->
+      <a class="btn btn-hover col-1  col-md-2 col-lg-1 icon-navbar  fw-bolder me-1 me-sm-1  
+      px-md-0 icon-user d-flex align-items-center" href="dangnhap.html" >
+        <!-- me-1 mx-sm-1 -->
+        <p class="d-none d-xl-block  text-nowrap mb-0">Đăng nhập </p>
+        <i class="fa-solid fa-user-plus ms-2 fs-5"></i>
+  </a>
+  
+  
+      <!-- button mở ra list khi màng hình nhỏ -->
+      <div class="col-1 ms-sm-1 d-flex p-0 d-block d-md-none">
+        <button class="btn btn-hover text-center pt-sm-0 d-md-none d-flex align-items-center px-0 fs-4 w-100"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+  
+        <div class="offcanvas-md offcanvas-start " tabindex="-1" id="offcanvasResponsive"
+          aria-labelledby="offcanvasResponsiveLabel">
+          <div class="offcanvas-header nen-xanh">
+            <p class="text-center mau-vang fw-bold  m-0 fs-4">Menu</p>
+            <button type="button" class="btn-close fw-bold " data-bs-dismiss="offcanvas"
+              data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+          </div>
+  
+  
+          <!-- list khi màng hình nhỏ  class link-connect-list chỉnh css  -->
+          <div class="offcanvas-body d-flex align-items-start flex-column nen-xanhnhat list-item  d-block d-md-none ">
+            <a href="sanpham.html" class="text-center fw-medium mau-tim link-connect-list ">Sản phẩm</a>
+            <a href="tintuc.html" class=" link-connect-list fw-medium mau-tim text-center">Tin tức</a>
+            <a href="lienhe.html" class=" link-connect-list fw-medium mau-tim  text-center">Liên hệ</a>
+            <a href="gioithieu.html" class="link-connect-list fw-medium mau-tim  text-center">Giới thiệu</a>
+            <a href="dangky.html" class="link-connect-list fw-medium mau-tim text-center">Đăng ký</a>
+            <a href="dangnhap.html" class="link-connect-list fw-medium mau-tim text-center ">Đăng nhập</a>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+  
+      <div class="container">
+        <nav class=" mt-3 justify-content-md-evenly  row">
+          <div class="col-1 p-0 d-none d-md-block"></div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn  btn-hover fw-bolder text-nowrap text-center w-100 fs-5" href="sanpham.html" >Sản phẩm</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="tintuc.html" >Tin tức</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="lienhe.html" >Liên hệ</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover  fw-bolder text-nowrap text-center w-100  fs-5" href="gioithieu.html"
+              >Giới thiệu</a>
+          </div>
+          <div class="col-1 p-0 d-none d-md-block"></div>
+  
+  
+        </nav>
+      </div>
+  
+    </header>
+    <main class="pt-md-5 pt-2 container">
+      <article  class="news-article">
+        <img
+          src="./images/tintuc/tt2.png"
+          alt="Tin tức hot"
+          class="img-fluid rounded"
+        />
+        <div class="p-3">
+          <h2 class="article-title">
+            Vì sao ba mẹ nên giải mã gen cho bé trong 1000 ngày đầu đời?
+          </h2>
+          <p class="article-meta">
+            Ngày đăng: <span class="article-date">01/11/2024</span>
+          </p>
+          <p class="article-text">
+            Trẻ trong 1000 ngày đầu đời không thể nói hay diễn đạt trọn vẹn thứ
+            mình cần. Thay lời muốn nói của chính cơ thể trẻ, giải mã gen ở thời
+            điểm này sẽ giúp ba mẹ bổ sung đủ dưỡng chất cần thiết cho bé với
+            chế độ hợp lý, đồng thời còn mang lại rất nhiều lợi ích thiết thực
+            khác. 1.000 ngày đầu đ...
+          </p>
+          <p class="article-text">
+            <strong
+              >1.000 ngày đầu đời quyết định sự phát triển của trẻ sau này
+            </strong>
+            <br />
+          </p>
+
+          <p>
+            1000 ngày đầu đời của trẻ được tính từ lúc mẹ bắt đầu thụ thai cho
+            đến lúc em bé hơn 2 tuổi. Rất nhiều nghiên cứu khoa học trên thế
+            giới đã khẳng định, 1000 ngày đầu đời là quãng thời gian vàng, quyết
+            định sự phát triển của trẻ về sau. Nếu được bổ sung dinh dưỡng và
+            chăm sóc đúng cách trong giai đoạn này, trẻ sẽ có sức đề kháng tốt
+            hơn và phát huy tiềm năng tối đa về thể chất cũng như trí tuệ trong
+            tương lai.
+          </p>
+          <p>
+            Cũng theo các nghiên cứu khoa học trên thế giới, thì dinh dưỡng đúng
+            cách sẽ giúp giảm 20% nguy cơ tử vong ở trẻ dưới 5 tuổi và giúp cho
+            trẻ có trí thông minh cao hơn, học hành tốt hơn. Ngược lại, nếu có
+            chế độ dinh dưỡng không đúng cách trong 1000 ngày đầu đời, thì trẻ
+            có sức đề kháng kém hơn.
+          </p>
+          <p>
+            Còn theo các nghiên cứu gần đây trên thế giới, dinh dưỡng đầy đủ
+            trong 1000 ngày đầu đời là bước đệm tiềm năng ngăn ngừa các bệnh mạn
+            tính không lây. Hiện nay, các bệnh mạn tính không lây được coi là
+            sát thủ hàng đầu thế giới, mỗi năm có khoảng 35 triệu ca tử vong
+            trên toàn cầu, chiếm khoảng 60% số ca tử vong trên thế giới. Vây, ba
+            mẹ đã biết bổ sung dinh dưỡng như thế nào cho con trong 1000 ngày
+            đầu đời là đúng, đủ và thích hợp chưa? Làm cách nào để hiểu được nhu
+            cầu dinh dưỡng cá nhân hóa của con? Giải pháp hay sẽ được chia sẻ
+            ngay ở nội dung tiếp theo. Ba mẹ cùng tham khảo nhé!
+          </p>
+          <strong
+            >Giải mã gen cho bé trong 1000 ngày đầu đời giải mã nhu cầu dinh
+            dưỡng
+          </strong>
+          <p>
+            Theo nhận định của các chuyên gia dinh dưỡng, sức khỏe, thể chất và
+            trí tuệ của trẻ sẽ đạt mức điểm tối đa; nếu ba mẹ biết tận dụng 1000
+            ngày đầu đời để bổ sung đủ dưỡng chất cần thiết theo chế độ hợp lý
+            và khoa học. Dù đang ở giai đoạn nào, miễn là vẫn trong 1000 ngày
+            vàng thì không bao giờ là quá muộn để bắt đầu xây dựng chế độ dinh
+            dưỡng hợp lý.
+          </p>
+          <p>
+            Mỗi đứa trẻ là một cá thể đặc biệt nên các yếu tố về gen di truyền,
+            dinh dưỡng, giáo dục, gia đình sẽ ảnh hưởng lên quá trình hình thành
+            nhân cách và phát triển của trẻ một cách khác nhau. Nhờ sự phát
+            triển của khoa học và công nghệ y sinh, kết quả từ xét nghiệm gen
+            giúp phân tích khả năng hấp thụ dinh dưỡng (đường, bột, đạm, chất
+            béo), giúp giải mã nhu cầu dinh dưỡng nói chung và đặc điểm về nhu
+            cầu vitamin (A, B2, B6, B9, B12, C, D) theo cơ địa của trẻ, đồng
+            thời còn phân tích mức độ nhạy cảm với vị đắng và vị ngọt để lên
+            thực đơn ăn dặm phù hợp, giúp hành trình ăn dặm của bé dễ dàng hơn
+          </p>
+          <p>
+            Giải mã gen còn đánh giá nguy cơ dị ứng đạm sữa của trẻ - dị ứng
+            thực phẩm phổ biến nhất ở trẻ em. Từ đó, ba mẹ sớm nhận diện được
+            các triệu chứng của trẻ sau khi hấp thụ các sản phẩm có đạm sữa.
+            Chính nhờ việc hiểu rõ đặc điểm cơ thể của con đã giúp rất nhiều ba
+            mẹ tự tin hơn trong việc xây dựng chế độ dinh dưỡng hợp lý cho con
+            phát triển khỏe mạnh, đặc biệt là 1000 ngày đầu đời. Ngoài lợi ích
+            này, giải mã gen cho bé còn mang đến nhiều lợi ích khác. Con Cưng đã
+            tổng hợp chi tiết ở phần nội dung tiếp theo. Mời ba mẹ tiếp tục theo
+            dõi nhé!
+          </p>
+          <strong
+            >Giải mã gen cho bé trong 1000 ngày đầu đời còn những lợi ích nào?
+          </strong>
+          <strong
+            >Xác định tiềm năng học thuật (IQ, EQ, Ngôn ngữ, Âm nhạc, Năng lực
+            nhận thức)
+          </strong>
+          <p>
+            Nhìn vào bảng phân tích kết quả sau khi giải mã gen, ba mẹ còn có
+            thể biết được về năng lực và các chỉ số về trí tuệ như: chỉ số thông
+            minh, chỉ số trí tuệ cảm xúc. Với một đứa trẻ được dự đoán có tiềm
+            năng về toán học, ngôn ngữ, âm nhạc từ bộ gene, ba mẹ có thể vun
+            đắp, hỗ trợ con để phát huy đúng hướng. Chưa hết, nhiều đơn vị còn
+            phân tích một số gene có liên quan đến sức mạnh, sức bền, sức mạnh
+            cơ bắp, nguy cơ chấn thương, lợi ích từ tập luyện của một người.
+            Chẳng hạn một người có tiềm năng thể chất bẩm sinh và có định hướng
+            trở thành vận động viên chuyên nghiệp thì nên có chế độ tập luyện
+            phù hợp để phát huy thế mạnh.
+          </p>
+          <em>
+            Xác định khuynh hướng hành vi (Hướng ngoại/nội, Tính kỷ luật, Nóng
+            tính, Khả năng kiểm soát căng thẳng)
+          </em>
+          <p>
+            Từ xét nghiệm gen cho con, ba mẹ còn có thể biết được khuynh hướng
+            hành vi và hiểu rõ hơn về tính cách của bé như: bé hướng nội hay
+            hướng ngoại, bé có bất ổn nào trong cảm xúc không, có nóng tính
+            không, có khả năng kiểm soát căng thẳng không,... Thay vì phải chờ
+            trẻ lớn lên và mất nhiều thời gian để quan sát các dấu hiệu như:
+            thường xuyên thu mình, chỉ thích ở nhà hơn là đi chơi cùng bạn,...
+            thì ba mẹ mới có thể biết được con có tính hướng nội. Với xét nghiệm
+            gen, ba mẹ đã có thể biết ngay nhờ kết quả nồng độ BDNF thấp (một
+            protein quan trọng ở não). Để tăng cường nồng độ BDNF, ba mẹ có thể
+            hướng dẫn con các bài tập sức bền, tránh tiêu thụ đường, tránh căng
+            thẳng và hạn chế ở một mình. Vì con rất dễ ảnh hưởng bởi cảm xúc của
+            người khác, ba mẹ nên cho trẻ tiếp xúc với những người tích cực, lạc
+            quan, cởi mở để dần cải thiện sự nhút nhát.
+          </p>
+          <p>
+            ến đây hẳn ba mẹ đã hiểu được lý do vì sao nên giải mã gen cho bé
+            trong 1000 ngày đầu đời. Không chỉ có thể chủ động xây dựng chế độ
+            dinh dưỡng hợp lý nhằm tạo nền tảng vững chắc cho trẻ phát triển
+            khỏe mạnh và thông minh, giải mã gen còn tiết lộ cho ba mẹ biết
+            khuynh hướng về tính cách và tiềm năng học thuật của con như thế
+            nào. Từ kết quả này, ba mẹ có thể chọn lựa phương pháp giáo dục phù
+            hợp để định hướng đúng đắn cho con, giúp con phát triển tiềm năng,
+            đồng thời cải thiện khuyết điểm. Cũng chính những lợi ích này đã
+            khiến 2 gói giải mã gen cho bé là Baby Well và Baby Well Plus được
+            đông đảo ba mẹ tìm mua khi đến với chuỗi cửa hàng mẹ và bé
+          </p>
+          <p>
+            Đây là 2 gói giải mã gen được thiết kế bởi Genetica - công ty giải
+            mã gen đến từ San Francisco và bắt đầu hoạt động tại Việt Nam vào
+            năm 2018. Công ty đặc biệt đầu tư vào trang thiết bị và công nghệ
+            cho phòng lab. Sự đầu tư này đã giúp phòng lab của Genetica đạt
+            những chứng chỉ nghiêm ngặt bậc nhất tại Hoa Kỳ cho các phòng thí
+            nghiệm về xét nghiệm gen như: CLIA, CAP,... Định hướng thiết kế của
+            Genetica đối với 2 gói giải mã gen Baby Well và Baby Well Plus là
+            trở thành cơ sở vững vàng hỗ trợ ba mẹ tạo điều kiện cho con phát
+            triển toàn diện trong 1000 ngày đầu đời của trẻ. Gói giải mã gen
+            phân tích hơn 200 gen từ mẫu nước bọt của bé, cho ra những báo cáo
+            quan trọng trong hành trình phát triển của bé từ giai đoạn sơ sinh
+            đến 2, 3 tuổi.
+          </p>
+          <a href="tintuc.html" class="btn btn-secondary"
+            >Quay lại trang tin tức</a>
+        </div>
+      </article>
+    </main>
+    <footer >
+      <div class="container  px-5 px-sm-0 border-top pt-4">
+        <div class="row  ">
+          <div class="col-md-3 col-12  col-sm-6 px-1 text-start">
+            <!-- logo -->
+            <a class=" text-center" href="trangchu.html">
+              <img src="images/abc.png " class="navbar-logo mb-2" alt="logo">
+            </a>
+            <p>
+              <i class="fa-solid fa-location-dot "></i>
+              - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              - Điện thoại: 1900 1234
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              - babyhouse@gmail.com
+            </p>
+  
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6  ">
+            <div class="d-flex flex-column text-start">
+              <p class="text-start text-uppercase fw-bold mau-tim">Về BabyHouse</p>
+              <p><a class="link-connect" href="csvdk.html">Chính sách bảo mật</a></p>
+              <p><a class="link-connect" href="csvdk.html">Điều khoản dịch vụ</a></p>
+              <p><a class="link-connect" href="csvdk.html">Chính sách đổi trả</a></p>
+              <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6  ">
+            <div class="d-flex flex-column text-start">
+              <p class="text-start text-uppercase fw-bold mau-tim">Liên kết</p>
+              <p><a class="link-connect " href="sanpham.html">Sản phẩm</a></p>
+              <p><a class="link-connect" href="tintuc.html">Tin tức</a></p>
+              <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+              <p><a class="link-connect" href="gioithieu.html">Giới thiệu</a></p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6">
+            <p class="fw-bold text-uppercase mau-tim ">Đăng ký nhận thông tin</p>
+            <div class="input-group mb-3 ">
+              <input type="text" class="form-control rounded-pill " placeholder="Nhập Email">
+              <button class="btn btn-hover hover-effect" type="button"   >
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+            <!-- btn-brand class chỉnh các kiên kết  shoppe tiktok ... -->
+            <p class="fw-bold text-uppercase mau-tim ">Theo dõi BabyHouse</p>
+  
+            <a class="btn btn-brand text-center hover-effect" href="https://facebook.com" >
+              <img src="images/facebook2.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand text-center hover-effect" href="https://chat.zalo.me/" >
+              <img src="images/stick_zalo.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand text-center hover-effect" href="https://youtube.com" >
+              <img src="images/youtube2.webp" class="btn-brand"> </i>
+            </a>
+            <a class="btn btn-brand  text-center hover-effect" href="https://tiktok.com" >
+              <img src="images/tiktok.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand  text-center hover-effect" href='https://shopee.vn' >
+              <img src="images/shopee.webp" class="btn-brand text-center"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

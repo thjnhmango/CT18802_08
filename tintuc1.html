@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyHouse  </title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="js/script.txt " defer > </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js.txt"></script>
+    <script src="bootstrap/js/jquery.js"></script>
+  </head>
+  <body>
+    <header class="row justify-content-md-evenly  pt-5 pb-2  header-brand fixed-top">
+
+      <!-- logo -->
+      <a href="trangchu.html" id="logo" class="col-4 col-md-2 navbar-brand  logo-navbar ms-2   text-center">
+        <!--   mx-md-2 mx-lg-3 -->
+        <img src="images/abc2.PNG" alt="logo" class="navbar-logo"> </a>
+  
+      <!-- search -->
+      <form class="d-flex box-search p-0 col-4 col-md-5  me-2   col-lg-6" >
+        <!-- mx-md-2 me-xxl-3 -->
+        <input class="form-control rounded-pill " type="search" placeholder="tìm gì cho bé ba mẹ ơi?" >
+        <button class="btn btn-hover d-flex align-items-center justify-content-center hover-effect " type="submit">
+          <i class="fa-solid  fa-magnifying-glass px-2 d-md-none d-block"></i>
+          <P class="d-none fs-5  d-md-block mb-0 mx-3 ">Tìm</P>
+        </button>
+      </form>
+  
+  
+      <!-- lơn hơn lg thì hiện ra  -->
+      <div class="col-1 d-none d-lg-block px-0  "></div>
+      <!-- <div class="col-1 d-none d-xxl-block px-0 "></div> -->
+  
+      <!-- mua hàng -->
+      <a class="btn btn-hover col-1 col-md-2 col-lg-1 fw-bolder px-md-0  
+        icon-navbar icon-shopping d-flex align-items-center" href="donhang.html" >
+        <!--  mx-md-2 mx-xl-3 mx-xxl-4  -->
+        <p class="d-none d-xl-block text-nowrap  mb-0">Giỏ hàng</p>
+        <i class="fa-solid fa-basket-shopping ms-2 fs-5"></i>
+    </a>
+  
+      <!-- đăng ký đăng nhập -->
+      <a class="btn btn-hover col-1  col-md-2 col-lg-1 icon-navbar  fw-bolder me-1 me-sm-1  
+      px-md-0 icon-user d-flex align-items-center" href="dangnhap.html" >
+        <!-- me-1 mx-sm-1 -->
+        <p class="d-none d-xl-block  text-nowrap mb-0">Đăng nhập </p>
+        <i class="fa-solid fa-user-plus ms-2 fs-5"></i>
+  </a>
+  
+  
+      <!-- button mở ra list khi màng hình nhỏ -->
+      <div class="col-1 ms-sm-1 d-flex p-0 d-block d-md-none">
+        <button class="btn btn-hover text-center pt-sm-0 d-md-none d-flex align-items-center px-0 fs-4 w-100"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+  
+        <div class="offcanvas-md offcanvas-start " tabindex="-1" id="offcanvasResponsive"
+          aria-labelledby="offcanvasResponsiveLabel">
+          <div class="offcanvas-header nen-xanh">
+            <p class="text-center mau-vang fw-bold  m-0 fs-4">Menu</p>
+            <button type="button" class="btn-close fw-bold " data-bs-dismiss="offcanvas"
+              data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+          </div>
+  
+  
+          <!-- list khi màng hình nhỏ  class link-connect-list chỉnh css  -->
+          <div class="offcanvas-body d-flex align-items-start flex-column nen-xanhnhat list-item  d-block d-md-none ">
+            <a href="sanpham.html" class="text-center fw-medium mau-tim link-connect-list ">Sản phẩm</a>
+            <a href="tintuc.html" class=" link-connect-list fw-medium mau-tim text-center">Tin tức</a>
+            <a href="lienhe.html" class=" link-connect-list fw-medium mau-tim  text-center">Liên hệ</a>
+            <a href="gioithieu.html" class="link-connect-list fw-medium mau-tim  text-center">Giới thiệu</a>
+            <a href="dangky.html" class="link-connect-list fw-medium mau-tim text-center">Đăng ký</a>
+            <a href="dangnhap.html" class="link-connect-list fw-medium mau-tim text-center ">Đăng nhập</a>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+  
+      <div class="container">
+        <nav class=" mt-3 justify-content-md-evenly  row">
+          <div class="col-1 p-0 d-none d-md-block"></div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn  btn-hover fw-bolder text-nowrap text-center w-100 fs-5" href="sanpham.html" >Sản phẩm</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="tintuc.html" >Tin tức</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="lienhe.html" >Liên hệ</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover  fw-bolder text-nowrap text-center w-100  fs-5" href="gioithieu.html"
+              >Giới thiệu</a>
+          </div>
+          <div class="col-1 p-0 d-none d-md-block"></div>
+  
+  
+        </nav>
+      </div>
+  
+    </header>
+    <main class="pt-md-5 pt-2 container ">
+      <article class="news-article">
+        <img
+          src="./images/tintuc/tt1.png"
+          alt="Tin tức hot"
+          class="img-fluid rounded"
+        />
+        <div class="p-3">
+          <h2 class="article-title">
+            Cách dạy con thông minh chuẩn khoa học và hiệu quả cao
+          </h2>
+          <p class="article-meta">
+            Ngày đăng: <span class="article-date">01/11/2024</span>
+          </p>
+          <p class="article-text">
+            Ăn dặm là hành trình mà ba mẹ cần thiết kế chế độ dinh dưỡng sao
+                cho đảm bảo phù hợp với từng tháng tuổi của con. Ở mỗi độ tuổi,
+                thực đơn của bé sẽ thay đổi khác nhau nhằm cung cấp đầy đủ dinh
+                dưỡn...
+          </p>
+          <p class="article-text">
+            <strong
+              >Cách dạy con thông minh là cần phải biết con có tiềm năng gì?
+            </strong>
+            <br />
+            <p> Theo nhà tâm lý học Howard Gardner, có 9 loại trí thông minh bao
+            gồm: logic - toán học, ngôn ngữ, âm nhạc, không gian, nội tâm, vận
+            động, thiên nhiên, xã hội, triết học. Mỗi đứa trẻ sơ sinh đều có một
+            trí thông minh vượt trội, tác động đáng kể đến cách trẻ tương tác
+            với thế giới xung quanh như thế nào. Cũng chính vì có riêng một trí
+            thông minh mà mỗi cá thể cần có phương pháp học khác nhau thì mới
+            trở nên thông minh và xuất sắc.
+            </p>
+            <p> Điều này có nghĩa là ba mẹ cần xác định tiềm năng của con và hỗ trợ nuôi dưỡng, kích thích tiềm năng của con. Nhiều nghiên cứu cho thấy những năm đầu đời của trẻ có vai trò then chốt trong việc xác định cách bộ não phát triển. Những gì bé trải qua trong những năm đầu đời định hình nên con người mà bé sẽ trở thành, đồng thời còn ảnh hưởng đến sự hòa đồng của bé, cách kiểm soát cảm xúc, học tốt như thế nào ở trường và thậm chí là loại mối quan hệ mà bé có được trong tương lai. Cách dạy con thông minh chính là cần xác định càng sớm càng tốt con có tiềm năng gì để con phát triển hết được những tố chất vượt trội của con.
+            </p>
+          </p>
+          <a href="tintuc.html" class="btn btn-secondary"
+            >Quay lại trang tin tức</a
+          >
+        </div>
+      </article>
+    </main>
+    <footer >
+      <div class="container  px-5 px-sm-0 border-top pt-4">
+        <div class="row  ">
+          <div class="col-md-3 col-12  col-sm-6 px-1 text-start">
+            <!-- logo -->
+            <a class=" text-center" href="trangchu.html">
+              <img src="images/abc.png " class="navbar-logo mb-2" alt="logo">
+            </a>
+            <p>
+              <i class="fa-solid fa-location-dot "></i>
+              - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              - Điện thoại: 1900 1234
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              - babyhouse@gmail.com
+            </p>
+  
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6  ">
+            <div class="d-flex flex-column text-start">
+              <p class="text-start text-uppercase fw-bold mau-tim">Về BabyHouse</p>
+              <p><a class="link-connect" href="csvdk.html">Chính sách bảo mật</a></p>
+              <p><a class="link-connect" href="csvdk.html">Điều khoản dịch vụ</a></p>
+              <p><a class="link-connect" href="csvdk.html">Chính sách đổi trả</a></p>
+              <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6  ">
+            <div class="d-flex flex-column text-start">
+              <p class="text-start text-uppercase fw-bold mau-tim">Liên kết</p>
+              <p><a class="link-connect " href="sanpham.html">Sản phẩm</a></p>
+              <p><a class="link-connect" href="tintuc.html">Tin tức</a></p>
+              <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+              <p><a class="link-connect" href="gioithieu.html">Giới thiệu</a></p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6">
+            <p class="fw-bold text-uppercase mau-tim ">Đăng ký nhận thông tin</p>
+            <div class="input-group mb-3 ">
+              <input type="text" class="form-control rounded-pill " placeholder="Nhập Email">
+              <button class="btn btn-hover hover-effect" type="button"   >
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+            <!-- btn-brand class chỉnh các kiên kết  shoppe tiktok ... -->
+            <p class="fw-bold text-uppercase mau-tim ">Theo dõi BabyHouse</p>
+  
+            <a class="btn btn-brand text-center hover-effect" href="https://facebook.com" >
+              <img src="images/facebook2.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand text-center hover-effect" href="https://chat.zalo.me/" >
+              <img src="images/stick_zalo.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand text-center hover-effect" href="https://youtube.com" >
+              <img src="images/youtube2.webp" class="btn-brand"> </i>
+            </a>
+            <a class="btn btn-brand  text-center hover-effect" href="https://tiktok.com" >
+              <img src="images/tiktok.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand  text-center hover-effect" href='https://shopee.vn' >
+              <img src="images/shopee.webp" class="btn-brand text-center"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

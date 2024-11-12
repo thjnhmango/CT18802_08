@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyHouse  </title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="js/script.txt " defer > </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js.txt"></script>
+    <script src="bootstrap/js/jquery.js"></script>
+  </head>
+  <body>
+    <header class="row justify-content-md-evenly  pt-5 pb-2  header-brand fixed-top" >
+
+      <!-- logo -->
+      <a href="trangchu.html" id="logo" class="col-4 col-md-2 navbar-brand  logo-navbar ms-2   text-center">
+        <!--   mx-md-2 mx-lg-3 -->
+        <img src="images/abc2.PNG" alt="logo" class="navbar-logo"> </a>
+  
+      <!-- search -->
+      <form class="d-flex box-search p-0 col-4 col-md-5  me-2   col-lg-6">
+        <!-- mx-md-2 me-xxl-3 -->
+        <input class="form-control rounded-pill " type="search" placeholder="Tìm gì cho bé ba mẹ ơi?" >
+        <button class="btn btn-hover d-flex align-items-center justify-content-center hover-effect " type="submit">
+          <i class="fa-solid  fa-magnifying-glass px-2 d-md-none d-block"></i>
+          <P class="d-none fs-5  d-md-block mb-0 mx-3 ">Tìm</P>
+        </button>
+      </form>
+  
+  
+      <!-- lơn hơn lg thì hiện ra  -->
+      <div class="col-1 d-none d-lg-block px-0  "></div>
+      <!-- <div class="col-1 d-none d-xxl-block px-0 "></div> -->
+  
+      <!-- mua hàng -->
+      <a class="btn btn-hover col-1 col-md-2 col-lg-1 fw-bolder px-md-0  
+        icon-navbar icon-shopping d-flex align-items-center" href="donhang.html" >
+        <!--  mx-md-2 mx-xl-3 mx-xxl-4  -->
+        <p class="d-none d-xl-block text-nowrap  mb-0">Giỏ hàng</p>
+        <i class="fa-solid fa-basket-shopping ms-2 fs-5"></i>
+    </a>
+  
+      <!-- đăng ký đăng nhập -->
+      <a class="btn btn-hover col-1  col-md-2 col-lg-1 icon-navbar  fw-bolder me-1 me-sm-1  
+      px-md-0 icon-user d-flex align-items-center" href="dangnhap.html" >
+        <!-- me-1 mx-sm-1 -->
+        <p class="d-none d-xl-block  text-nowrap mb-0">Đăng nhập </p>
+        <i class="fa-solid fa-user-plus ms-2 fs-5"></i>
+  </a>
+  
+  
+      <!-- button mở ra list khi màng hình nhỏ -->
+      <div class="col-1 ms-sm-1 d-flex p-0 d-block d-md-none">
+        <button class="btn btn-hover text-center pt-sm-0 d-md-none d-flex align-items-center px-0 fs-4 w-100"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+  
+        <div class="offcanvas-md offcanvas-start " tabindex="-1" id="offcanvasResponsive"
+          aria-labelledby="offcanvasResponsiveLabel">
+          <div class="offcanvas-header nen-xanh">
+            <p class="text-center mau-vang fw-bold  m-0 fs-4">Menu</p>
+            <button type="button" class="btn-close fw-bold " data-bs-dismiss="offcanvas"
+              data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+          </div>
+  
+  
+          <!-- list khi màng hình nhỏ  class link-connect-list chỉnh css  -->
+          <div class="offcanvas-body d-flex align-items-start flex-column nen-xanhnhat list-item  d-block d-md-none ">
+            <a href="sanpham.html" class="text-center fw-medium mau-tim link-connect-list ">Sản phẩm</a>
+            <a href="tintuc.html" class=" link-connect-list fw-medium mau-tim text-center">Tin tức</a>
+            <a href="lienhe.html" class=" link-connect-list fw-medium mau-tim  text-center">Liên hệ</a>
+            <a href="gioithieu.html" class="link-connect-list fw-medium mau-tim  text-center">Giới thiệu</a>
+            <a href="dangky.html" class="link-connect-list fw-medium mau-tim text-center">Đăng ký</a>
+            <a href="dangnhap.html" class="link-connect-list fw-medium mau-tim text-center ">Đăng nhập</a>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+  
+      <div class="container">
+        <nav class=" mt-3 justify-content-md-evenly  row">
+          <div class="col-1 p-0 d-none d-md-block"></div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn  btn-hover fw-bolder text-nowrap text-center w-100 fs-5" href="sanpham.html" >Sản phẩm</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="tintuc.html" >Tin tức</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover   fw-bolder text-center w-100 fs-5" href="lienhe.html" >Liên hệ</a>
+          </div>
+          <div class="col-2  d-none d-md-block">
+            <a class="btn btn-hover  fw-bolder text-nowrap text-center w-100  fs-5" href="gioithieu.html"
+              >Giới thiệu</a>
+          </div>
+          <div class="col-1 p-0 d-none d-md-block"></div>
+  
+  
+        </nav>
+      </div>
+  
+    </header>
+    <main class="pt-md-5 pt-2">
+      <div class="container">
+        <header class=" p-3 text-center">
+          <h1 class="mau-xanh pt-4">Tin Tức Sản Phẩm Cho Trẻ Em</h1>
+          <p class="fs-4">Những tin tức và sản phẩm mới nhất dành cho bé yêu của bạn</p>
+        </header>
+        <div class="text-lest"><h3>Sự kiện nổi bật</h3></div>
+        <div class="row g-3 justify-content-center">
+          <div class="col-xl-3 blog-post card col-md-4 col-sm-6 mb-4">
+           <a href="tintuc1.html" >
+              <img src="./images/tintuc/tt1.png"  alt="Tin hot" />
+              <div class="card-body">
+              <h5 class="card-title" href="tintuc1.html">Cách dạy con thông minh chuẩn khoa học và hiệu quả cao</h5>
+
+              <p class="card-text d-none d-md-block" >
+                Cách dạy con thông minh là cần phải biết con có tiềm năng gì?
+                Theo nhà tâm lý học Howard Gardner, có 9 loại trí thông minh bao
+                gồm: logic - toán học, ngôn ngữ, âm nhạc, không gian, nội tâm,
+                vận động, thiên nhiên, xã hội, triết học. Mỗi đứa trẻ sơ sinh
+                đều có một trí thông minh vượt trội...
+              </p>
+              <a href="tintuc1.html" class="btn btn-hover">Xem thêm</a>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4 blog-post card col-sm-6 mb-4 "  >
+            <a href="tintuc2.html" >
+              <img src="./images/tintuc/tt2.png" alt="Tin hot" />
+              <div class="card-body">
+                
+              <h5 class="card-title" href="tintuc2.html">Vì sao ba mẹ nên giải mã gen cho bé trong 1000 ngày đầu
+                đời?</h5>
+
+              <p class="card-text d-none d-md-block" >
+                Trẻ trong 1000 ngày đầu đời không thể nói hay diễn đạt trọn vẹn
+                thứ mình cần. Thay lời muốn nói của chính cơ thể trẻ, giải mã
+                gen ở thời điểm này sẽ giúp ba mẹ bổ sung đủ dưỡng chất cần
+                thiết cho bé với chế độ hợp lý, đồng thời còn mang lại rất nhiều
+                lợi ích thiết thực khác. 1.000 ngày đầu đ...
+              </p>
+              <a href="tintuc2.html" class="btn btn-hover">Xem thêm</a>
+            </a>
+              </div>
+          </div>
+          <div class="col-xl-3 col-md-4 blog-post card col-sm-6 mb-4" >
+            <a href="tintuc3.html" >
+              <img src="./images/tintuc/tt3.png" alt="Tin hot" />
+              <div class="card-body">
+              <h5 class="card-title" href="tintuc3.html">Một số lưu ý giúp ba mẹ chọn quà Noel cho bé 1 - 2 tuổi</h5>
+
+              <p class="card-text d-none d-md-block" >
+                Giáng Sinh là dịp lễ thích hợp để mỗi người có thể bày tỏ lòng
+                yêu thương của mình đến người thân yêu thông qua những món quà.
+                Và nếu ba mẹ đang chưa biết nên chọn quà Noel nào là phù hợp với
+                bé 1 -2 tuổi, thì hãy tham khảo...
+              </p>
+              <a href="tintuc3.html" class="btn btn-hover">Xem thêm</a>
+            </a>
+              </div>
+          </div>
+          <div class="col-xl-3 col-md-4 blog-post card col-sm-6 mb-4">
+            <a href="tintuc4.html" >
+              <img src="./images/tintuc/tt4.png" alt="Tin hot" />
+              <div class="card-body">
+              <h5 class="card-title" href="tintuc4.html">Khủng hoảng tuổi lên 3 kéo dài bao lâu và cách giúp con vượt
+                qua</h5>
+
+              <p class="card-text d-none d-md-block" >
+                Không chỉ ảnh hưởng trực tiếp đến tâm lý của trẻ, khủng hoảng tuổi lên 3 còn khiến rất nhiều ba mẹ cảm thấy căng thẳng và bức bối. Do vậy, khủng hoảng tuổi lên 3 kéo theo nhiều hệ lụy không mong muốn cho cả gia đình. Trẻ có thể biểu hiện sự thay đổi về hành vi, chẳng ....
+              </p>
+              <a href="tintuc4.html" class="btn btn-hover">Xem thêm</a>
+            </a>
+              </div>
+              
+          </div>
+          <div class="col-xl-3 col-md-4 blog-post card col-sm-6 mb-4">
+            <a href="tintuc5.html" >
+              <img src="./images/tintuc/tt5.png" alt="Tin hot" />
+              <div class="card-body">
+              <h5 class="card-title" href="tintuc5.html">Tham khảo lịch ăn dặm cho bé 9 tháng đơn giản</h5>
+
+              <p class="card-text d-none d-md-block" >
+                Ăn dặm là hành trình mà ba mẹ cần thiết kế chế độ dinh dưỡng sao
+                cho đảm bảo phù hợp với từng tháng tuổi của con. Ở mỗi độ tuổi,
+                thực đơn của bé sẽ thay đổi khác nhau nhằm cung cấp đầy đủ dinh
+                dưỡn...
+              </p>
+              
+              <a href="tintuc5.html" class="btn btn-hover">Xem thêm</a>
+            </a>
+              </div>
+              
+          </div>
+          
+        </div>
+        
+      </div>
+    </main>
+    <footer >
+      <div class="container  px-5 px-sm-0 border-top pt-4">
+        <div class="row  ">
+          <div class="col-md-3 col-12  col-sm-6 px-1 text-start">
+            <!-- logo -->
+            <a class=" text-center" href="trangchu.html">
+              <img src="images/abc.png " class="navbar-logo mb-2" alt="logo">
+            </a>
+            <p>
+              <i class="fa-solid fa-location-dot "></i>
+              - Địa chỉ: Khu 2 Đ. 3 Tháng 2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              - Điện thoại: 1900 1234
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              - babyhouse@gmail.com
+            </p>
+  
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6  ">
+            <div class="d-flex flex-column text-start">
+              <p class="text-start text-uppercase fw-bold mau-tim">Về BabyHouse</p>
+              <p><a class="link-connect" href="csvdk.html">Chính sách bảo mật</a></p>
+              <p><a class="link-connect" href="csvdk.html">Điều khoản dịch vụ</a></p>
+              <p><a class="link-connect" href="csvdk.html">Chính sách đổi trả</a></p>
+              <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6  ">
+            <div class="d-flex flex-column text-start">
+              <p class="text-start text-uppercase fw-bold mau-tim">Liên kết</p>
+              <p><a class="link-connect " href="sanpham.html">Sản phẩm</a></p>
+              <p><a class="link-connect" href="tintuc.html">Tin tức</a></p>
+              <p><a class="link-connect" href="lienhe.html">Liên hệ</a></p>
+              <p><a class="link-connect" href="gioithieu.html">Giới thiệu</a></p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-12 px-1 col-sm-6">
+            <p class="fw-bold text-uppercase mau-tim ">Đăng ký nhận thông tin</p>
+            <div class="input-group mb-3 ">
+              <input type="text" class="form-control rounded-pill " placeholder="Nhập Email">
+              <button class="btn btn-hover hover-effect" type="button"   >
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+            <!-- btn-brand class chỉnh các kiên kết  shoppe tiktok ... -->
+            <p class="fw-bold text-uppercase mau-tim ">Theo dõi BabyHouse</p>
+  
+            <a class="btn btn-brand text-center hover-effect" href="https://facebook.com" >
+              <img src="images/facebook2.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand text-center hover-effect" href="https://chat.zalo.me/" >
+              <img src="images/stick_zalo.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand text-center hover-effect" href="https://youtube.com" >
+              <img src="images/youtube2.webp" class="btn-brand"> </i>
+            </a>
+            <a class="btn btn-brand  text-center hover-effect" href="https://tiktok.com" >
+              <img src="images/tiktok.webp" class="btn-brand"></i>
+            </a>
+            <a class="btn btn-brand  text-center hover-effect" href='https://shopee.vn' >
+              <img src="images/shopee.webp" class="btn-brand text-center"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+</html>
